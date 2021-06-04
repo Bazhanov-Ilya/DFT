@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+    <title>DFT</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Дискретное преобразование Фурье</a>
+            </div>
+    </div>
+    <div class="container" align="center">
+        <div class="dtf">
+            <div class="row">
+                <h2>Введите значения</h2>
+            </div>
+
+            <div class="row my-3">
+                <div class="col"><input type="number" id="a_1"> * <select aria-label="Default select example" id="first">
+                  <option value="1">sin</option>
+                  <option value="2">cos</option>
+                </select> ( <input type="number" id="b_1"> * Pi * <input type="number" id="c_1"> )</div>
+                <div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="title">
+                    <div class="col">+</div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col"><input type="number" id="a_2"> * <select aria-label="Default select example" id="second">
+                 <option value="1">sin</option>
+                 <option value="2">cos</option>
+               </select> ( <input type="number" id="b_2"> * Pi * <input type="number" id="c_2"> )</div>
+                <div>
+                </div>
+            </div>
+
+            <div class="row my-3 text-center">
+                <div class="col">
+                    <button type="button" class="btn btn-dark" onclick="DTF()">Вычислить</button>
+                </div>
+            </div>
+
+            <div id="content" align="center">
+                <canvas id="myChart" width="628" height="400"></canvas>
+            </div>
+
+            <div id="content" align="center">
+                <canvas id="myChart2" width="628" height="400"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

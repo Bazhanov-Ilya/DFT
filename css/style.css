@@ -1,0 +1,40 @@
+.conteiner {
+    max-width: 1200px;
+}
+
+.dtf {
+    border-radius: 0px 0px 15px 15px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.header {
+    height: 40px;
+    background-color: rgb(18, 116, 70);
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar a {
+    font-size: 30px;
+}
+
+.navbar {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.row {
+    font-size: 20px;
+}
+
+.graf {
+    width: 100%;
+}
