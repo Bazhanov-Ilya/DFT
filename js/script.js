@@ -38,7 +38,7 @@ function Diagram() {
         }
     });
     //Заполняем данными
-    for (var x = 0; x <= 6.2; x += 0.1) {
+    for (var x = 0; x <= 6; x += 0.1) {
         myChart.data.labels.push('' + x.toFixed(2));
         myChart.data.datasets[0].data.push(f(x).toFixed(2));
         //   window.alert(f(x).toFixed(2));
@@ -88,7 +88,7 @@ function Gistogram() {
         }
     });
     //Заполняем данными
-    for (var x = 0; x <= 10; x += 0.5) {
+    for (var x = 0; x <= 30; x += 0.1) {
         myChart.data.labels.push('' + x);
         myChart.data.datasets[0].data.push(f_g(x));
         //window.alert(f_g(x).toFixed(2));
@@ -105,10 +105,10 @@ function f_g(x) { //Вычисление нужной функции
     //window.alert(Math.sin(document.getElementById('b_1').value * Math.PI * document.getElementById('c_1').value * x))
     //window.alert(document.getElementById('a_1').value * Math.sin(document.getElementById('b_1').value * Math.PI * document.getElementById('c_1').value));
     var x_t;
-    if (x == document.getElementById('a_1').value) {
-        x_t = document.getElementById('c_1').value;
-    } else if (x == document.getElementById('a_2').value) {
-        x_t = document.getElementById('c_2').value;
+    if (x == document.getElementById('c_1').value) {
+        x_t = document.getElementById('a_1').value;
+    } else if (x == document.getElementById('c_2').value) {
+        x_t = document.getElementById('a_2').value;
     } else {
         x_t = 0;
     }
