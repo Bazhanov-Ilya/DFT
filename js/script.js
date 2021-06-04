@@ -88,7 +88,7 @@ function Gistogram() {
         }
     });
     //Заполняем данными
-    for (var x = 0; x <= 30; x += 0.1) {
+    for (var x = 0; x <= 5; x += 0.1) {
         myChart.data.labels.push('' + x.toFixed(1));
         myChart.data.datasets[0].data.push(f_g(x));
         //window.alert(f_g(x).toFixed(2));
